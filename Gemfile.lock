@@ -7,7 +7,7 @@ PATH
       devise
       rack-ssl-enforcer
       rails (~> 3.2.8)
-      rails_admin (~> 0.3.0)
+      rails_admin
 
 GEM
   remote: http://rubygems.org/
