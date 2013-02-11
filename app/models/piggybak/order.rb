@@ -151,7 +151,7 @@ module Piggybak
 
       if !self.line_items.detect { |li| li.line_item_type == "payment" }
         payment_line_item = Piggybak::LineItem.new({ :line_item_type => "payment" })
-        payment_line_item.build_payment 
+        #payment_line_item.build_payment 
         self.line_items << payment_line_item
       end
     end
