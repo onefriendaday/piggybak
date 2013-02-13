@@ -11,7 +11,6 @@ module Piggybak
           ActiveRecord::Base.transaction do
             @order = Piggybak::Order.new(params[:piggybak_order])
             @order.create_payment_shipment
-
             if Piggybak.config.logging
               clean_params = params[:piggybak_order].clone
               clean_params[:line_items_attributes].each do |k, li_attr|

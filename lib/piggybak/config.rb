@@ -32,7 +32,8 @@ module Piggybak
         @order_cc = nil
 
         @payment_calculators = ["::Piggybak::PaymentCalculator::Fake",
-                                "::Piggybak::PaymentCalculator::AuthorizeNet"]
+                                "::Piggybak::PaymentCalculator::AuthorizeNet",
+                                "::Piggybak::PaymentCalculator::Boleto"]
         @shipping_calculators = ["::Piggybak::ShippingCalculator::FlatRate",
                                  "::Piggybak::ShippingCalculator::Free",
                                  "::Piggybak::ShippingCalculator::Range"]
